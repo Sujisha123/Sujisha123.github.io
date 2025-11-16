@@ -65,6 +65,41 @@
             color: #9ca3af;
             margin-top: 40px;
         }
+        .contact-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.contact-box {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  padding: 20px;
+  width: 260px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.contact-box:hover {
+  background: rgba(0, 204, 255, 0.1);
+  border-color: #00CFFF;
+  transform: translateY(-5px);
+}
+
+.contact-icon {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.contact-box a {
+  color: #F8F8F8;
+  text-decoration: none;
+  font-size: 15px;
+}
+        
     </style>
 </head>
 <body>
@@ -75,15 +110,20 @@
 </header>
 
 <section class="section" id="about">
-    <h2>About Me</h2>
-    <p>
-        I am a passionate <strong>Data Analyst</strong> with a strong academic background in
-        <strong>Bachelor of Science in Mathematics</strong>, which supports my analytical and problem‑solving skills.
-    </p>
-    <p>
-        I also have experience in the <strong>healthcare domain</strong>, which adds valuable real‑world
-        industry understanding for data analytics roles.
-    </p>
+  <h2>About Me</h2>
+  <p>
+    <strong>Hi, I’m Sujisha</strong> — a data-driven and detail-oriented aspiring Data Analyst with a strong
+    academic foundation in Mathematics (B.Sc), which enhances my analytical thinking and problem-solving skills.
+  </p>
+  <p>
+    I also have <strong>hands-on healthcare domain experience</strong>, giving me real-world exposure to structured
+    data, accuracy checks, and process-based workflows that align naturally with data analytics.
+  </p>
+  <p>
+    I’m passionate about <strong>transforming raw data into clear insights</strong>, optimizing processes, and creating
+    meaningful dashboards. I’m continuously building my skills in <strong>SQL, Python, Excel, Power BI,</strong> and
+    <strong>statistical analysis</strong> as I work toward a strong career in data.
+  </p>
 </section>
 
 <section class="section" id="skills">
@@ -117,12 +157,6 @@
     </div>
 </section>
 
-<section class="section" id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:sujisha@example.com">sujisha@example.com</a></p>
-    <p>GitHub: <a href="https://github.com/Sujisha123" target="_blank">github.com/Sujisha123</a></p>
-</section>
-
 <section class="section" id="certifications">
     <h2>Certifications</h2>
     <div class="projects">
@@ -143,11 +177,30 @@
 </section>
 
 <section class="section" id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:sujisha@example.com">sujisha@example.com</a></p>
-    <p>GitHub: <a href="https://github.com/Sujisha123" target="_blank">github.com/Sujisha123</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/" target="_blank">https://www.linkedin.com/in/sujishasuresh20/</a></p>
+  <h2>Contact</h2>
+
+  <div class="contact-container">
+
+    <div class="contact-box">
+      <div class="contact-icon">📧</div>
+      <a href="mailto:yourmail@gmail.com">yourmail@gmail.com</a>
+    </div>
+
+    <div class="contact-box">
+      <div class="contact-icon">🐙</div>
+      <a href="https://github.com/Sujisha123" target="_blank">github.com/Sujisha123</a>
+    </div>
+
+    <div class="contact-box">
+      <div class="contact-icon">🔗</div>
+      <a href="https://www.linkedin.com/in/sujishasuresh20/" target="_blank">
+        linkedin.com/in/sujishasuresh20
+      </a>
+    </div>
+
+  </div>
 </section>
+
 
 <footer>
     © 2025 Sujisha S — Portfolio
