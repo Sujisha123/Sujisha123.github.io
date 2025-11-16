@@ -127,17 +127,51 @@
     flex-wrap:wrap;
     margin-top:22px;
   }
-  .contact-card{
-    background:var(--card);
-    border:1px solid var(--card-border);
-    border-radius:12px;
-    padding:18px 20px;
-    width:280px;
-    text-align:center;
-    color:#dff8ff;
-  }
-  .contact-card i{font-size:36px; color:var(--cyan); margin-bottom:10px; display:block}
-  .contact-card a{color:#dff8ff; font-weight:600; margin-top:6px; display:inline-block}
+ /* Contact section: full card clickable */
+.contact-row{
+  display:flex;
+  gap:18px;
+  justify-content:center;
+  flex-wrap:wrap;
+  margin-top:22px;
+}
+
+.contact-card{
+  background:var(--card);
+  border:1px solid var(--card-border);
+  border-radius:12px;
+  padding:20px;
+  width:280px;
+  text-align:center;
+  color:#dff8ff;
+  text-decoration:none;
+  display:block;
+  transition:0.2s;
+}
+
+.contact-card:hover{
+  border-color:var(--cyan);
+  transform:translateY(-3px);
+}
+
+.contact-card i{
+  font-size:36px;
+  color:var(--cyan);
+  margin-bottom:10px;
+}
+
+.contact-card h3{
+  margin:0;
+  font-size:18px;
+  color:#e2f7ff;
+}
+
+.contact-card p{
+  margin-top:6px;
+  font-size:14px;
+  color:var(--muted);
+}
+
 
   /* Responsive tweaks */
   @media (max-width:900px){
@@ -157,6 +191,16 @@
   /* small helpers */
   h2{color:var(--cyan); margin:8px 0}
   .section-title{margin-top:28px}
+
+  .footer{
+  text-align:center;
+  padding:18px 0;
+  margin-top:40px;
+  color:#8fb8c7;
+  font-size:14px;
+  border-top:1px solid rgba(0, 204, 255, 0.1);
+}
+
 </style>
 </head>
 <body>
@@ -246,30 +290,39 @@
 
   <!-- CONTACT -->
   <section class="section-title">
-    <h2>Contact</h2>
-    <div class="contact-row">
-      <div class="contact-card">
-        <i class="fa-solid fa-envelope"></i>
-        <a href="mailto:sujishasuresh20@gmail.com">sujishasuresh20@gmail.com</a>
-      </div>
+  <h2>Contact</h2>
 
-      <div class="contact-card">
-        <i class="fa-brands fa-github"></i>
-        <a href="https://github.com/Sujisha123" target="_blank">github.com/Sujisha123</a>
-      </div>
+  <div class="contact-row">
 
-      <div class="contact-card">
-        <i class="fa-brands fa-linkedin"></i>
-        <a href="https://www.linkedin.com/in/sujishasuresh20/" target="_blank">linkedin.com/in/sujishasuresh20</a>
-      </div>
-    </div>
-  </section>
+    <a href="mailto:sujishasuresh20@gmail.com" class="contact-card">
+      <i class="fa-solid fa-envelope"></i>
+      <h3>Email</h3>
+      <p>sujishasuresh20@gmail.com</p>
+    </a>
 
-</div>
+    <a href="https://github.com/Sujisha123" target="_blank" class="contact-card">
+      <i class="fa-brands fa-github"></i>
+      <h3>GitHub</h3>
+      <p>Visit my GitHub</p>
+    </a>
+
+    <a href="https://www.linkedin.com/in/sujishasuresh20/" target="_blank" class="contact-card">
+      <i class="fa-brands fa-linkedin"></i>
+      <h3>LinkedIn</h3>
+      <p>Connect with me</p>
+    </a>
+
+  </div>
+</section>
+
+
+
     
-<footer>
-© 2025 Sujisha S — Portfolio
+
+</div>  
+<footer class="footer">
+  © 2025 Sujisha S — Portfolio
 </footer>
-    
+
 </body>
 </html>
